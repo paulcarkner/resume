@@ -46,6 +46,10 @@ body {
 	margin-top: 2em;
 }
 
+a {
+	color: inherit;
+}
+
 b {
 	font-weight: 600;
 }
