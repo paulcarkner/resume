@@ -1,166 +1,170 @@
 :root {
-	--bdr: 1.5px solid #d8d8d8;
+  --bdr: 1.5px solid #d8d8d8;
 }
 
 @page {
-	margin: 0.5in;
-	width: 8.5in;
-	height: 11in;
+  margin: 0.5in;
+  width: 8.5in;
+  height: 11in;
 }
 
 @media only screen {
-html {
-	background: #ccc;
+  html {
+    background: #ccc;
+  }
+
+  body {
+  }
+
+  .page {
+    width: 7.5in;
+    height: 10in;
+    border: 1px solid #000;
+    box-shadow: 0.1in 0.1in 0.1in 0 #0002;
+    margin: 0.25in auto;
+    background: #fff;
+    padding: 0.5in;
+  }
 }
 
 body {
-}
-
-.page {
-	width: 7.5in;
-	height: 10in;
-	border: 1px solid #000;
-	box-shadow: 0.1in 0.1in 0.1in 0 #0002;
-	margin: 0.25in auto;
-	background: #fff;
-	padding: 0.5in;
-}
-}
-
-body {
-	font-family: "Red Hat Display";
-	font-size: 10pt;
-	font-weight: 400;
-	color: #444;
+  font-family: "Red Hat Display";
+  font-size: 10pt;
+  font-weight: 400;
+  color: #444;
 }
 
 .title {
-	text-transform: uppercase;
-	letter-spacing: 0.3em;
-	font-size: 1.1em;
-	font-weight: 600;
-	margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 1em;
 }
 
 .title:not(:first-child) {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 a {
-	color: inherit;
+  color: inherit;
 }
 
 b {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 hr {
-	border: none;
-	border-bottom: var(--bdr);
-	margin-block: 2em;
+  border: none;
+  border-bottom: var(--bdr);
+  margin-block: 2em;
 }
 
 p {
-	margin-block: 0.25em 0.75em;
+  margin-block: 0.25em 0.75em;
+}
+
+p.no-margin {
+  margin-bottom: 0;
 }
 
 .page {
-	page-break-after: always;
+  page-break-after: always;
 }
 
 .row {
-	display: grid;
-	grid-template-columns: 1.8in auto;
-	padding: 2em 0;
+  display: grid;
+  grid-template-columns: 1.8in auto;
+  padding: 2em 0;
 }
 
 .row:not(:last-child) {
-	border-bottom: var(--bdr);
+  border-bottom: var(--bdr);
 }
 
-.row>:first-child {
-	border-right: var(--bdr);
-	padding-right: 0.25in;
+.row > :first-child {
+  border-right: var(--bdr);
+  padding-right: 0.25in;
 }
 
 .row > :last-child {
-	padding-left: 0.25in;
+  padding-left: 0.25in;
 }
 
 ul.none {
-	list-style: none;
-	padding-inline-start: 0;
+  list-style: none;
+  padding-inline-start: 0;
 }
 
 ul.gapped li {
-	margin-bottom: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 ul ul {
-	padding-left: 1.5em;
+  padding-left: 1.5em;
 }
 
 .name {
-	text-align: center;
-	font-size: 3em;
-	padding-bottom: 0.5in;
-	text-transform: uppercase;
-	letter-spacing: 0.3em;
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 0.5in;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
 }
 
 .slogan {
-	text-align: center;
-	padding: 1em;
-	border-top: var(--bdr);
-	border-bottom: var(--bdr);
-	font-weight: 600;
+  text-align: center;
+  padding: 1em;
+  border-top: var(--bdr);
+  border-bottom: var(--bdr);
+  font-weight: 600;
 }
 
 .slogan span {
-	padding-inline: 1em;
+  padding-inline: 1em;
 }
 
 .slogan span:not(:last-child) {
-	border-right: 1px solid #eee;
+  border-right: 1px solid #eee;
 }
 
 .slogan img {
-	height: 1em;
-	vertical-align: -0.25em;
-	margin-right: 1px;
-	filter: saturate(0) contrast(2);
+  height: 1em;
+  vertical-align: -0.25em;
+  margin-right: 1px;
+  filter: saturate(0) contrast(2);
 }
 
 .skill {
-	display: grid;
-	grid-template: auto 5px / auto auto;
-	align-items: end;
-	gap: 0.3em;
-	margin-bottom: 1em;
+  display: grid;
+  grid-template: auto 5px / auto auto;
+  align-items: end;
+  gap: 0.3em;
+  margin-bottom: 1em;
 }
 
 .skill .desc {
-	font-size: 0.7em;
-	text-align: right;
-	color: #aaa;
+  font-size: 0.7em;
+  text-align: right;
+  color: #aaa;
 }
 
 .barContainer {
-	grid-column: 1 / -1;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 0.3em;
-	height: 100%;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.3em;
+  height: 100%;
 }
 
 .bar {
-	background: #eee;
-	box-shadow: 0 0 0 1px #0002 inset;
-	height: 100%;
-	width: 100%;
-	border-radius: 5px;
+  background: #eee;
+  box-shadow: 0 0 0 1px #0002 inset;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .bar.on {
-	background: #444;
+  background: #444;
 }
