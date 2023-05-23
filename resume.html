@@ -39,50 +39,77 @@
           </ul>
         </div>
         <div>
-          <table style="width: 100%">
-            <tr>
-              <td>
-                <b>**********manager name*******</b><br />
-                ***********manager position**********<br />
-                AgencyAnalytics<br />
-                18 King Street East, Suite 1400<br />
-                Toronto, Ontario, M5C 1C4
-              </td>
-              <td style="vertical-align: top; text-align: right">
-                March 26th, 2023
-              </td>
-            </tr>
-          </table>
-          <p>Dear **********manager name*******,</p>
+          <div style="text-align: right; margin-bottom: 3em">
+            <script>
+              const d = new Date();
+              const months = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+              ];
+              const numAppend = [
+                "",
+                "st",
+                "nd",
+                "rd",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "st",
+                "nd",
+                "rd",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "th",
+                "st",
+              ];
+              document.write(
+                `${months[d.getMonth()]} ${d.getDate()}${
+                  numAppend[d.getDate()]
+                }, ${d.getFullYear()}`
+              );
+            </script>
+          </div>
+          <p>To whom it may concern,</p>
           <p>
             I am submitting to you this cover letter and resume as application
-            for the position of
-            <b>&quot;*************position***********&quot;</b>. I have reviewed
-            the job description and feel that I am capable of handling all
-            required aspects of this position and will be able to quickly master
-            any new skills needed.
-          </p>
-          <p>
-            I have been good friends with <b>Albert Villaruz</b> for almost a
-            decade and he (repeatedly) has encouraged me to apply for this
-            position. We have discussed the position thoroughly and together
-            feel I would be a good long-term addition to the team just like he
-            has been.
+            for a position as a <b>React front-end web developer</b>. I have
+            reviewed the job description and feel that I am capable of handling
+            all required aspects of this position and will be able to quickly
+            master any new skills needed.
           </p>
           <p>
             I have been doing web development as a hobby and entrepreneurial
             endevour for over twenty years, accumulating approximately 20,000
             hours of coding time in HTML, CSS, JS (ES6+), jQuery, C# ASP.NET,
-            T-SQL and recently some React and TypeScript.
-          </p>
-          <p>
-            Tweleve years ago I needed to step away from my career in project
-            management and program development due to struggles in my personal
-            life. I sought the assistance I needed and those struggles are no
-            longer part of my life. The result of this process was me starting
-            my own company that worked on developing entrepreneurial web
-            projects full time as well as starting a photography business for
-            some supplimental income.
+            T-SQL and recently learned React and TypeScript.
           </p>
           <p>
             I have a <b>Master of Business Administration</b> degree and a
@@ -96,6 +123,15 @@
             of my work.
           </p>
           <p>
+            Twelve years ago I needed to step away from my career in project
+            management and program development due to struggles in my personal
+            life. I sought the assistance I needed and those struggles are no
+            longer part of my life. The result of this process was me starting
+            my own company that worked on developing entrepreneurial web
+            projects full time as well as starting a photography business for
+            some supplemental income.
+          </p>
+          <p>
             I can appreciate that my experience and training may not be the
             traditional path web developers normally take but I have no doubt
             that if given the opportunity to demonstrate my abilities you will
@@ -103,7 +139,7 @@
           </p>
           <p>
             Thank you for your time and consideration. I look forward to being
-            able to discuss my application further with you.
+            able to discuss my application with you further.
           </p>
           <p>Sincerely,</p>
           <p class="no-margin">Paul Carkner</p>
